@@ -16,5 +16,23 @@ namespace RichardGalarzaEP1
         {
             InitializeComponent();
         }
+
+        private async void btnAbrirHome_Clicked(object sender, EventArgs e)
+        {
+            {
+                string usuario = txtUsuario.Text;
+                string pass = txtPass.Text;
+
+                if ((usuario == "estudiante2021") && (pass == "uisrael2021"))
+                {
+                    await Navigation.PushAsync(new MainPage());
+               
+                }
+                else
+                {
+                    DisplayAlert("CREDENCIALES INCORRECTAS", usuario, "CERRAR"); 
+                }
+             }
     }
+}
 }

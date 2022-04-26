@@ -4,9 +4,14 @@
              x:Class="RichardGalarzaEP1.Login">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame BackgroundColor="#2196F3" Padding="15" CornerRadius="0">
+                <Label Text="Iniciar Sesion" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+            </Frame>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png "/>
+            <Entry x:Name="txtUsuario" Placeholder="Usuario"></Entry>
+            <Entry x:Name="txtPass" Placeholder="Contraseña" IsPassword="True"></Entry>
+            <Button x:Name="btnAbrirHome" Text="INGRESAR !" Clicked="btnAbrirHome_Clicked"></Button>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

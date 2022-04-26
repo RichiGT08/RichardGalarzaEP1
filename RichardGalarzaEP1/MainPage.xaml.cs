@@ -10,9 +10,24 @@ namespace RichardGalarzaEP1
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage()
+        public MainPage(  )
         {
             InitializeComponent();
+           /// lblUsuario.Text = Usuario;
+        }
+
+      
+
+        private async void btnResumen_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Resumen());
+
+        }
+
+        private async void btnRegistro_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Registro());
+
         }
     }
 }
