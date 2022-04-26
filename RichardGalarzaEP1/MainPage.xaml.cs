@@ -10,10 +10,10 @@ namespace RichardGalarzaEP1
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage(  )
+        public MainPage( String Usuario )
         {
             InitializeComponent();
-           /// lblUsuario.Text = Usuario;
+            lblUsuario.Text = Usuario;
         }
 
       
@@ -25,8 +25,10 @@ namespace RichardGalarzaEP1
         }
 
         private async void btnRegistro_Clicked(object sender, EventArgs e)
+        
         {
-            await Navigation.PushAsync(new Registro());
+            string usuario = lblUsuario.Text;
+            await Navigation.PushAsync(new Registro(usuario));
 
         }
     }

@@ -7,13 +7,16 @@
         <Frame BackgroundColor="#2196F3" Padding="15" CornerRadius="0">
             <Label Text="Menu Principal" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
         </Frame>
+        <Label Text="usuario Conectado:" FontSize="15"/>
+        <Label  x:Name="lblUsuario" FontSize="15" HorizontalTextAlignment="Start"/>
         <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png "/>
-        <Label x:Name="lblUsuario"/>
+
         <Frame/>
         <Button x:Name="btnRegistro"  Text="ABRIR REGISTRO" TextColor="Black" FontAttributes="Bold" BackgroundColor="Aquamarine" Clicked="btnRegistro_Clicked"/>
         <Frame/>
         <Button x:Name="btnResumen"  Text="ABRIR RESUMEN" TextColor="Black" FontAttributes="Bold" BackgroundColor="Aquamarine" Clicked="btnResumen_Clicked"/>
         <Frame/>
+        
     </StackLayout>
 
 

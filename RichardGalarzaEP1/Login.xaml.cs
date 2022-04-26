@@ -25,7 +25,7 @@ namespace RichardGalarzaEP1
 
                 if ((usuario == "estudiante2021") && (pass == "uisrael2021"))
                 {
-                    await Navigation.PushAsync(new MainPage());
+                    await Navigation.PushAsync(new MainPage(usuario));
                
                 }
                 else
