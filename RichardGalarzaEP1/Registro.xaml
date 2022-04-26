@@ -11,14 +11,16 @@
             <Label  x:Name="lblUsuario" FontSize="15" HorizontalTextAlignment="Start"/>
             <Frame/>
             <Grid>
-                <Label x:Name="lblnombre" Text="Nombre :" Grid.Row="0"  Grid.Column="0" />
-                <Entry x:Name="txtNombre" Grid.Row="0"  Grid.Column="1" Placeholder="Usuario" FontSize="15"/>
-                <Label x:Name="lblMontoI" Text="Monto Inicial :" Grid.Row="1" Grid.Column="0"/>
-                <Entry x:Name="txtMontoI" Grid.Row="1"  Grid.Column="1" Placeholder="ingrese $" FontSize="15"/>
-                <Label x:Name="lblPago" Text="Pago Mensual :" Grid.Row="2" Grid.Column="0"/>
-                <Button x:Name="btncalcular" Text="CALCULAR" Grid.Row="2"  Grid.Column="1"  FontSize="15" Clicked="btncalcular_Clicked"/>
-                <Button x:Name="btnguardar" Text="GUARDAR !" Grid.Row="3"  Grid.Column="1"     BackgroundColor="DarkSlateBlue" Clicked="btnguardar_Clicked"/>
+                <Label x:Name="lblnombre" Text="Nombre Estudiante:" Grid.Row="0"  Grid.Column="0"  FontAttributes="Bold" FontSize="18"/>
+                <Entry x:Name="txtNombre" Grid.Row="0"  Grid.Column="1" Placeholder="ingrese Aqui" FontSize="16" FontAttributes="Bold"/>
+                <Label x:Name="lblMontoI" Text="Monto Inicial :" Grid.Row="1" Grid.Column="0" FontSize="16" FontAttributes="Bold"/>
+                <Entry x:Name="txtMontoI" Grid.Row="1"  Grid.Column="1" Placeholder="ingrese $" FontSize="16" FontAttributes="Bold"/>
+                <Label x:Name="lblPago" Text="Pago Mensual :" Grid.Row="2" Grid.Column="0" FontSize="16" FontAttributes="Bold"/>
+                <Entry x:Name="txttotal" Grid.Row="3" Grid.Column="0" FontSize="16" FontAttributes="Bold" IsEnabled="False"/>
 
+                <Button x:Name="btncalcular" Text="CALCULAR" Grid.Row="2"  Grid.Column="1"  FontSize="15" Clicked="btncalcular_Clicked" BackgroundColor="CadetBlue"/>
+                <Button x:Name="btnguardar" Text="GUARDAR !" Grid.Row="3"  Grid.Column="1"     BackgroundColor="DarkSlateBlue" Clicked="btnguardar_Clicked"/>
+                
 
 
             </Grid>

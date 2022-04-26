@@ -20,7 +20,8 @@ namespace RichardGalarzaEP1
 
         private async void btnResumen_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Resumen());
+            string usuario = lblUsuario.Text;
+            await Navigation.PushAsync(new Resumen(usuario));
 
         }
 

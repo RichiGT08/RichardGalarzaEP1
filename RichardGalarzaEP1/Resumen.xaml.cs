@@ -12,9 +12,29 @@ namespace RichardGalarzaEP1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Resumen : ContentPage
     {
-        public Resumen()
+        private string usuario;
+
+        public Resumen(string usuario)
+        {
+            this.usuario = usuario;
+        }
+
+        public Resumen(string Usuario, string nombre, string montof)
         {
             InitializeComponent();
+            lblUsuario.Text = Usuario;
+            lblNombre.Text = nombre;
+            lblMonto.Text = montof;
+            
+            
+            
+           
+        }
+
+        private async void btnRegresar_Clicked(object sender, EventArgs e)
+        {
+
+            await Navigation.PushAsync(new MainPage(usuario));
         }
     }
 }

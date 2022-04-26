@@ -4,9 +4,20 @@
              x:Class="RichardGalarzaEP1.Resumen">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame BackgroundColor="#2196F3" Padding="15" CornerRadius="0">
+                <Label Text="Resumen" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+            </Frame>
+            
+            <Grid>
+                <Label Text="usuario Conectado:" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Label  x:Name="lblUsuario" FontSize="20" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Nombre Estudiante:" FontSize="20" Grid.Row="1"  Grid.Column="0"  FontAttributes="Bold" />
+                <Label x:Name="lblNombre" Grid.Row="1" FontSize="20"  Grid.Column="1" FontAttributes="Bold"/>
+                <Label Text="Monto Final:" Grid.Row="2"  FontSize="20" Grid.Column="0"  FontAttributes="Bold" />
+                <Label x:Name="lblMonto" Grid.Row="2"  FontSize="20" Grid.Column="1" FontAttributes="Bold"/>
+                <Button x:Name="btnRegresar"  Text="Regresar" Grid.Row="5"  FontSize="20" Grid.Column="1" TextColor="Black" FontAttributes="Bold" BackgroundColor="Aquamarine" Clicked="btnRegresar_Clicked"/>
+
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
